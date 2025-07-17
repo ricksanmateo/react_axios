@@ -6,6 +6,18 @@ const api = axios.create({
   baseURL: `http://localhost:4000/blog`,
 });
 
+const add = axios.add({
+  baseURL: `http://localhost:4000/add`,
+});
+
+const edit = axios.edit({
+  baseURL: `http://localhost:4000/edit`,
+});
+
+const deleteItem = axios.delete({
+  baseURL: `http://localhost:4000/delete`,
+});
+
 function App() {
   useEffect(() => {
     const fetchPosts = async () => {
